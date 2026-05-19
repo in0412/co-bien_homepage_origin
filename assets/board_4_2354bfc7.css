@@ -1,0 +1,110 @@
+/*
+td#board {padding:4 5 5 5;font-size:12;font-family:����,����;color:#333333;}
+.board {padding:4 5 5 5;font-size:12;font-family:����,����;color:#333333;}
+.board a:link{padding:0 0 0 0;font-size:12;font-family:����,����;color:#000000;text-decoration:none;}
+.board a:visited{padding:0 0 0 0;font-size:12;font-family:����,����;color:#000000;text-decoration:none;}
+.board a:hover{padding:0 0 0 0;font-size:12;font-family:����,����;color:#000000;text-decoration:underline;}
+.board a:active{padding:0 0 0 0;font-size:12;font-family:����,����;color:#000000;text-decoration:none;}
+*/
+
+/*�Խ��� ����
+.bbsnewf5 {padding:10 10 10 10;font-size:12;font-family:����,����;color:#333333;}
+.bbsnewf5 a:link{color:#555555;text-decoration:none}
+.bbsnewf5 a:visited{color:#555555;text-decoration:none}
+.bbsnewf5 a:hover{color:#FF5500;text-decoration:none}
+*/
+
+/*����*/
+.bbsbody03{width:340;overflow:hidden;text-overflow:ellipsis;padding-left:5;padding-right:5}
+
+/*����_�����ڷ� ����
+.news_title {color:#0E3D72;font-size:14px;letter-spacing:-1;text-decoration:none;}
+.news_title a:link{color:#0E3D72;font-size:14px;letter-spacing:-1;text-decoration:none}
+.news_title a:visited{color:#0E3D72;font-size:14px;letter-spacing:-1;text-decoration:none}
+.news_title a:hover{color:#0E3D72;font-size:14px;letter-spacing:-1;text-decoration:underline}
+*/
+
+/*����_�����ڷ� ����*/
+.news_cont {color:#555555;text-decoration:none}
+.news_cont a:link{color:#555555;text-decoration:none}
+.news_cont a:visited{color:#555555;text-decoration:none}
+.news_cont a:hover{color:#FF5500;text-decoration:none}
+
+
+/*������ ����*/
+.gallery_title { }
+
+/*������ ����*/
+.gallery_cont { }
+
+
+/*����¡
+.paging { font-size: 1.0em; color:#111; font-weight: bold; }
+.paging a:link { font-size: 1.0em; color: #888; font-weight: bold; text-decoration: none; }
+.paging a:visited { font-size: 1.0em; color: #888; font-weight: bold; text-decoration: none; }
+.paging a:hover { font-size: 1.0em; color: #888; font-weight: bold; text-decoration: none; }
+*/
+
+/*�˻���Ʈ(����Ʈ�ڽ�)*/
+.search_txt {font-size:10px;color:#666666}
+
+/*�⺻��Ʈ
+.board_txt {font-size:12px;color:#000000;text-decoration:none;padding-top:4;}
+.board_txt a:link{font-size:12px;color:#000000;text-decoration:none;}
+.board_txt a:visited{font-size:12px;color:#000000;text-decoration:none;}
+.board_txt a:hover{font-size:12px;color:#000000;text-decoration:none;}
+.board_txt2 {font-size:12px;color:#333333;text-decoration:none;padding-top:4;}
+.board_txt2 a:link{font-size:12px;color:#333333;text-decoration:none;}
+.board_txt2 a:visited{font-size:12px;color:#333333;text-decoration:none;}
+.board_txt2 a:hover{font-size:12px;color:#333333;text-decoration:none;}
+input#border {font-size:12;color:##666666;border:1 solid #D4D4D4}
+textarea#border {font-size:12;color:##666666;border:1 solid #D4D4D4}
+*/
+
+/* bgcolor �Խ��� �׸� : �ۺ��� */
+.board_bgcolor { width: 100px; background-color: #F7F7F7; }
+.board_rate {padding:0 0 0 0;font-size:12;color:#555;background-color:#E6F0F9;}
+.board_rate_td {padding:4 5 5 5;font-size:12;color:#555;background-color:#FFFFFF}
+.board_comment_bgcolor { background-color: #fff; border: 1px solid #eee; }
+
+
+/* ���� �Խ��� ��Ÿ�� 
+.board_output {padding:4 0 0 0;font-size:12;font-family:����,����;color:#333333;}
+.board_output a:link{padding:0 0 0 0;font-size:12;font-family:����,����;color:#333333;text-decoration:none;}
+.board_output a:visited{padding:0 0 0 0;font-size:12;font-family:����,����;color:#333333;text-decoration:none;}
+.board_output a:hover{padding:0 0 0 0;font-size:12;font-family:����,����;color:#333333;text-decoration:underline;}
+.board_output a:active{padding:0 0 0 0;font-size:12;font-family:����,����;color:#333333;text-decoration:none;}
+*/
+
+/* �����Ʈ
+.comment_name { font-size: 0.875em; color:#222; padding: 5px; }
+.comment_txt { font-size: 0.875em; color::#000; padding: 5px; }
+.comment_txt a:link { font-size: 0.875em; color: #555; }
+.comment_txt a:visited { font-size: 0.875em; color: #555; }
+.comment_txt a:hover { font-size: 0.875em; color: #555; }
+*/
+
+/* ������ �Խ��� (���ι迭) */
+.webzine_type2 {width:100%;}
+.webzine_type2 td { color:#666666; }
+.webzine_type2 dl, #webzine_type2 dt, #webzine_type2 dd {margin:0;padding:0}
+.webzine_type2 dl {float:left;clear:both;width:100%;padding:0 0 16px 0;margin-bottom:0;}
+
+.webzine_type2 .webzine_type_img_td { vertical-align:top; }
+.webzine_type2 .webzine_type_img img {width: 100%; height: auto; border: 0px solid #f00; }
+
+.webzine_type2 .webzine_type2_table_line { width:100%; border-top:0px solid #eee; margin-top: 30px; display: block; }
+.webzine_type2 dd {float:left;width:100%;padding:3px 0 3px 0;margin:0 0 -1px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.webzine_type2 .obj_name { display:inline-block; width:90px; height:25px; padding:3px 0 3px 10px; color:#666666; background:url('bl_webzine_type2_title_c7d5b26d.gif') right 6px no-repeat; }
+.webzine_type2 .obj_value { padding: 3px 3px 3px 10px; }
+.webzine_type2 .div_news_title { vertical-align: top; }
+
+/* �̹����� �����϶� */
+.webzine_type2 .webzine_type_text_td_left { width:65%; padding:0 0 0 20px; vertical-align: top; }
+/* �̹����� �������϶� */
+.webzine_type2 .webzine_type_text_td_right { width:65%; padding:0 20px 0 0; vertical-align: top; }
+
+/* �������� ���� ����, ���� ���� 
+.board_output_gallery_subject { text-align:center;width:100%; }
+.board_output_gallery_description { text-align:center;width:100%; }
+*/

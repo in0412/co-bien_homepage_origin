@@ -1,0 +1,30 @@
+/* �⺻ �ؽ�Ʈ ��Ÿ�� */
+.member_txt {font-size:12px;font-family:����,����;color:#333333}
+
+/* �ؽ�Ʈ�ڽ� ��Ÿ�� */
+.member_border {font-size:12px;font-family:����;color:#666666; border:1px solid #CACACA;}
+
+/* �׸� ��Ÿ�� */
+.member_td_bgcolor { background-color:#f4f4f4; }
+
+/* ȸ�� �ֹε�Ϲ�ȣ/���ǹ�ȣ/�ܱ��ε�Ϲ�ȣ/���ι�ȣ Ȯ�� ��Ÿ�� */
+ul.member_list {margin:10px 0 0 0;}
+ul.member_list li {margin:0 0 15px 0;}
+ul.member_list li input {margin:-2px 0 0 0; vertical-align:middle;}
+.member_divide {width:100%; font-size:12px; border-top:1px solid #cecece; border-bottom:1px solid #cecece;}
+.member_divide th {padding:7px 10px 6px 10px; color:#555; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; background:#f7f7f7;}
+.member_divide td {padding:5px 10px 4px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;}
+.member_divide td.member_list_bg {color:#555; background:#f7f7f7;}
+.member_divide td.member_cont {height:170px; padding:15px 10px; vertical-align:top; border-right:none; border-bottom:none;}
+.member_info {}
+.member_info dl {}
+.member_info dt {clear:both; float:left; width:100px; height:13px; margin:0 0 5px 0; padding:4px 0 0 0;}
+.member_info dt input {margin:-2px 0 0 0; vertical-align:middle;}
+.member_info dt.foreigner_info {width:220px; margin:0;}
+.member_info dd {margin:0 0 5px 0;}
+.member_info dd.foreigner_info2 {float:left; margin:2px 0 0 0;}
+
+/* table */
+.t_m1 {border-collapse:collapse; border-top:2px solid #88A8EC; border-left:1px solid #CECECE;}
+.t_m1 td {padding-top:5px; padding-bottom:5px; border-right:1px solid #CECECE; border-bottom:1px solid #CECECE;}
+.t_m1 table td {border:none;}

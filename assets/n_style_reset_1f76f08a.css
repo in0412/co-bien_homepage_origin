@@ -1,0 +1,197 @@
+@charset 'utf-8';
+
+/*****************************************************************
+   deletion of the current branch prohibited
+   powered by nnin ( http://www.nnin.com )
+*****************************************************************/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+ol, ul, li {list-style-type: none;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ 
+ol, ul {
+    list-style: none;
+}
+ 
+blockquote, q {
+    quotes: none;
+}
+ 
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+/*****************************************************************
+기타추가
+*****************************************************************/
+a,
+img,
+input {
+    outline: none !important;
+    selector-dummy: expression(this.hideFocus=true) !important;
+}
+
+a {
+    font-size: 100%;
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+.n_maximg {
+    max-width: 100%;
+}
+
+
+
+
+
+/*****************************************************************
+여백 설정
+*****************************************************************/
+.pt10 {padding-top:10px !important;}
+.pt20 {padding-top:20px !important;}
+.pt30 {padding-top:30px !important;}
+.pt40 {padding-top:40px !important;}
+.pb10 {padding-bottom:10px !important;}
+.pb20 {padding-bottom:20px !important;}
+.pb30 {padding-bottom:30px !important;}
+.pb40 {padding-bottom:40px !important;}
+
+.mt10 {margin-top:10px !important;}
+.mt20 {margin-top:20px !important;}
+.mt30 {margin-top:30px !important;}
+.mt40 {margin-top:40px !important;}
+.mb10 {margin-bottom:10px !important;}
+.mb20 {margin-bottom:20px !important;}
+.mb30 {margin-bottom:30px !important;}
+.mb40 {margin-bottom:40px !important;}
+
+
+
+
+
+
+/*****************************************************************
+드래그 선택 블록색상
+*****************************************************************/
+::selection {
+    background:#aaa;
+    color: #FFF;
+    text-shadow: none;
+}
+::-moz-selection {
+    background:#aaa;
+    color: #FFF;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background:#aaa;
+    color: #FFF;
+    text-shadow: none;
+}
+
+
+
+
+
+/*****************************************************************
+bootstrap 버튼 : 기본버튼 변형
+*****************************************************************/
+/* 버튼 */
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+}
+
+
+
+
+
+/*****************************************************************
+슬라이드 1,2,3 : 좌우링크버튼 투명배경
+*****************************************************************/
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

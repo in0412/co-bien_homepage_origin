@@ -1,0 +1,1821 @@
+@charset 'utf-8';
+
+/*****************************************************************
+   deletion of the current branch prohibited
+   powered by nnin ( http://www.nnin.com )
+*****************************************************************/
+
+
+
+/* 회원관련 */
+/*****************************************************************
+로그인 : login.php
+*****************************************************************/
+.np_login {
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+/**/
+.np_loginBox01 {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    margin: 20px auto 20px;
+    border: 0px solid #f00;
+}
+.np_loginBox01 h3 {
+    color: #222;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+.np_loginBox01 p {
+    margin: 5px 0 20px 0;
+}
+.np_loginBox01 input[type=text],
+.np_loginBox01 input[type=password] {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 1px;
+    padding-left: 10px;
+}
+.np_loginBox01 .sec01 {
+    overflow: hidden;
+}
+.np_loginBox01 .sec01 .sec_left {
+    width: 70%;
+    float: left;
+}
+.np_loginBox01 .sec01 .sec_left input {
+    height: 40px;
+}
+.np_loginBox01 .sec01 .sec_right {
+    width: 29.5%;
+    float: right;
+}
+.np_loginBox01 .sec01 .sec_right input[name=login_ok] {
+    width: 100%;
+    height: 84px;
+    background-color: #222;
+    border: 1px solid #fff;
+    color: #ccc;
+}
+.np_loginBox01 .sec02 {
+    margin-top: 20px;
+}
+.np_loginBox01 .sec02 ul li {
+    text-align: right;
+    margin: 1px 0;
+    font-size: 0.875em;
+    color: #888;
+}
+.np_loginBox01 .sec02 .btn-sm {
+    width: 29.5%;
+    margin-left: 10px;
+    text-align: right;
+}
+
+/**/
+.np_loginBox02 {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    margin: 30px auto;
+    border-top: 1px dotted #888;
+    overflow: hidden;
+}
+.np_loginBox02 h3 {
+    margin: 20px 0 0;
+    font-size: 1.250em;
+}
+.np_loginBox02 p {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    color: #888;
+}
+.np_loginBox02 ul {
+    overflow: hidden;
+}
+.np_loginBox02 li span {
+    width: 29.5%;
+    line-height: 40px;
+    display: inline-block;
+    background-color: #ddd;
+    text-align: center;
+    margin: 1px 0;
+}
+.np_loginBox02 li input {
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    float: right;
+    margin: 1px 0;
+}
+.np_loginBox02 .np_order_ok button {
+    width: 29.5%;
+    float: right;
+    text-align: right;
+    margin: 10px 0;
+}
+
+@media (max-width:768px) {
+    .np_login {
+        border: none;
+    }
+    .np_loginBox01,
+    .np_loginBox02 {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+
+
+/*****************************************************************
+회원가입 : join.php
+*****************************************************************/
+.np_join {
+    border: 1px solid #eee;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.np_join .sec01 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 20px 0px;
+}
+
+.np_join .sec01 h3 {
+    font-size: 2.5em;
+    font-weight: 100;
+    border: 0px solid #ccc;
+}
+
+.np_join .sec01 p {
+    font-size: 1.0em;
+}
+
+.np_join .sec02 {
+    overflow: hidden;
+    width: 70%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.np_join .sec_left {
+    width: 70%;
+    float: left;
+}
+
+.np_join .sec_right {
+    width: 29.5%;
+    float: right;
+}
+
+.np_join .sec_left span {
+    float: left;
+    display: block;
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ddd;
+    margin: 1px 0;
+    text-align: center;
+}
+
+.np_join input.box {
+    height: 40px;
+}
+
+.np_join input {
+    width: 70%;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    margin: 1px 0;
+}
+
+.np_join input[name=join_ok] {
+    width: 100%;
+    height: 82px;
+    background-color: #333;
+    font-size: 1.25em;
+    font-weight: 300;
+    color: #fff;
+    border: 0;
+}
+
+@media (max-width:768px) {
+    .np_join {
+        width: 100%;
+        border: none;
+    }
+    .np_join .sec01,
+    .np_join .sec02 {
+        width: 100%;
+    }
+}
+
+
+
+
+/*****************************************************************
+회원가입 : join.php : agreement_form
+*****************************************************************/
+.np_agreement {
+    text-align: left;
+    border: 0px solid #f00;
+}
+
+.np_agreement h5 {
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 0;
+    border: 0px solid #eee;
+}
+
+.np_agreement input {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.np_agreement textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+.np_agreement input[type=image] {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.np_agreement button {
+    width: 150px;
+    float: right;
+    text-align: right;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.np_agreement .member_txt td {
+    font-size: 1.150em;
+/*    border: 10px solid #f00;*/
+}
+
+.np_agreement .member_txt input[name=com_member_check_agree],
+.np_agreement .member_txt input[name=com_member_check_safe],
+.np_agreement .member_txt input[name=com_member_check_collection] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+
+
+/*****************************************************************
+회원가입 & 정보수정 : join.php , edit.php : apply_form (입력양식)
+*****************************************************************/
+.np_apply {
+    text-align: left;
+    border: 0px solid #eee;
+}
+
+.np_apply h5 {
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 10px 0;
+    margin-top: 20px;
+    border: 0px solid #eee;
+}
+
+.np_apply .sec01 {
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.np_apply .sec01 h4 {
+    font-size: 1.25em;
+    font-weight: 100;
+    padding: 10px 0;
+    border: 0px solid #ccc;
+}
+
+.np_apply .sec01 p {
+    padding: 0px;
+}
+
+.np_apply .sec02 {
+    margin-top: 30px;
+    font-size: 0.875em;
+}
+
+.np_apply .sec02 .member_txt tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+.np_apply .sec02 .member_td_bgcolor {
+    width: 20%;
+}
+
+.np_apply .sec02 input,
+.np_apply .sec02 select {
+    max-width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 1px 0;
+    padding-left: 5px;
+}
+
+.np_apply .sec02 .t_m1 {
+    border-top: 1px solid #222;
+}
+
+.np_apply .sec02 #dl1 dt {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.np_apply .sec02 input[name=addr],
+.np_apply .sec02 input[name=addr2] {
+    width: 100%;
+}
+
+.np_apply .sec02 input[name=addr_post1],
+.np_apply .sec02 input[name=phone_no1],
+.np_apply .sec02 input[name=phone_no2],
+.np_apply .sec02 input[name=phone_no3],
+.np_apply .sec02 select[name=mobile_no1],
+.np_apply .sec02 input[name=mobile_no2],
+.np_apply .sec02 input[name=mobile_no3] {
+    width: 65px;
+}
+
+.np_apply .sec02 input[name=member_img] {
+    border: none;
+}
+
+.np_apply .sec03 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.np_apply .sec03 .btn-default {
+    padding: 10px 20px;
+}
+
+.np_apply .sec03 a {
+    vertical-align: top;
+}
+
+@media (max-width:768px) {
+    .np_apply .sec02 input,
+    .np_apply .sec02 select {
+        width: 100%;
+    }
+    
+    .np_apply .sec02 input[type=radio] {
+        width: 15px;
+    }
+}
+
+
+
+
+/*****************************************************************
+회원가입 : join.php : apply_result_form (가입완료)
+*****************************************************************/
+.np_apply_result {}
+
+.np_apply_result .sec01 {
+    border: 1px solid #eee;
+    padding: 50px 10px;
+}
+
+.np_apply_result .sec01 h3 {
+    font-size: 2.5em;
+    font-weight: 100;
+    padding: 10px 0;
+    border: 0px solid #ccc;
+}
+
+.np_apply_result .sec01 p {
+    padding: 10px;
+}
+
+.np_apply_result .sec01 strong {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #5b95c9;
+}
+
+.np_apply_result .sec02 {
+    margin: 20px 0 30px;
+    overflow: hidden;
+}
+
+.np_apply_result .sec02 button {
+    width: 150px;
+    float: right;
+    text-align: right;
+    margin: 10px 0;
+}
+
+
+
+
+/*****************************************************************
+회원탈퇴 : secede
+*****************************************************************/
+.np_out {
+    text-align: left;
+}
+.np_out .sec01 .tit {
+    color: #111;
+    border-bottom: 1px solid #222;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.np_out .sec01 table {
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+}
+.np_out .sec01 tr td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+.np_out .sec01 tr td:first-child {
+    width: 25%;
+    background-color: #eee;
+    text-align: center;
+}
+.np_out .sec01 input {
+    height: 30px;
+    padding: 5px;
+}
+
+.np_out .sec02 {
+    margin: 50px 0;
+    width: 100%;
+    display: table;
+}
+.np_out .sec02 .tit {
+    color: #111;
+    border-bottom: 1px solid #222;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.np_out .sec03 a {
+    vertical-align: top;
+}
+
+
+.np_out h5 {
+    font-size: 1.0em;
+    font-weight: 400;
+    color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.np_out input {
+    float: left;
+    margin-right: 10px;
+}
+
+.np_out .sec03 {
+    margin-top: 40px;
+}
+
+.np_out .sec03 input {
+    float: none;
+    margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+하단영역 : 이용안내
+*****************************************************************/
+.np_siteinfo .rull_site {
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    line-height: 200%;
+}
+
+.np_siteinfo .rull_site #use {
+    text-align: right;
+}
+
+.np_siteinfo .rull_site dl {
+    
+}
+
+.np_siteinfo .rull_site dt {
+    margin-top: 30px;
+}
+
+.np_siteinfo .rull_site dd {
+}
+
+
+
+/*****************************************************************
+하단영역 : 서비스이용약관
+*****************************************************************/
+.np_siteinfo .service_rull {
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    line-height: 200%;
+}
+
+.np_siteinfo .service_rull p.tit {
+    margin-top: 30px;
+}
+
+
+
+/*****************************************************************
+하단영역 : 개인정보취급방침
+*****************************************************************/
+.np_siteinfo .personal {
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    line-height: 200%;
+}
+
+.np_siteinfo .personal .summary {
+    margin-top: 30px;
+    color: #888;
+}
+
+.np_siteinfo .personal h3 {
+    margin-top: 30px;
+    font-size: 1.125em;
+}
+
+
+
+/*****************************************************************
+하단영역 : 이메일무단수집거부
+*****************************************************************/
+.np_siteinfo .email {
+    padding: 20px 0 50px;
+    line-height: 300%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+게시판 공통 전체
+*****************************************************************/
+.n_board_txt > table,
+.n_board_gallery > table {
+    width: 100%;
+    border: 0px solid #f00;
+}
+
+
+/*****************************************************************
+게시판 최상단라인 & 기타영역 잡동 컬러
+*****************************************************************/
+.n_board_gallery > table .boxArea > table > tbody > tr > td {
+    background-color: #fff;
+    vertical-align: top;
+}
+
+
+/*****************************************************************
+글목록 : 전체선택(관리자로그인시)
+*****************************************************************/
+.n_board_txt #check_all,
+.n_board_gallery #check_all {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+}
+
+
+/*****************************************************************
+글읽기, 글쓰기 : tr > td(좌측/우측)
+*****************************************************************/
+.n_board_txt .board_bgcolor,
+.n_board_gallery .board_bgcolor {
+    width: 20%;
+}
+.n_board_txt .board_desc,
+.n_board_gallery .board_desc {
+    width: 80%;
+    text-align: left;
+}
+
+
+/*****************************************************************
+글쓰기 : 하단 공지글체크
+*****************************************************************/
+.n_board_txt .board_desc input[type=checkbox],
+.n_board_gallery .board_desc input[type=checkbox] {
+    max-width: 17px;
+    max-height: 17px;
+}
+
+
+/*****************************************************************
+글쓰기 : 상단입력내용(작성자,비번,제목등..) & 글목록 : 관리자체크박스
+*****************************************************************/
+.n_board_txt .board td input,
+.n_board_gallery .board td input {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    height: 30px;
+    padding: 3px 5px;
+    margin: 1px 0;
+}
+
+.n_board_txt .board td input[type=file],
+.n_board_gallery .board td input[type=file] {
+    max-width: 500px;
+    border: 0px solid #ddd;
+}
+
+.n_board_txt .seLayout,
+.n_board_gallery .seLayout {
+    border: none;
+}
+
+
+/*****************************************************************
+글쓰기 : 전화번호, 휴대폰, 라디오버튼, 체크박스
+*****************************************************************/
+.n_board_txt .board td input[name=phone_no1],
+.n_board_txt .board td input[name=phone_no2],
+.n_board_txt .board td input[name=phone_no3],
+.n_board_txt .board td input[name=mobile_no1],
+.n_board_txt .board td input[name=mobile_no2],
+.n_board_txt .board td input[name=mobile_no3] {
+    max-width: 70px;
+    width: 100%;
+}
+
+.n_board_txt .board td input[type=radio],
+.n_board_txt .board td input[type=checkbox] {
+    width: 20px;
+    margin: 0 0 0 5px;
+}
+
+
+/*****************************************************************
+글쓰기 : textarea
+*****************************************************************/
+.n_board_txt .seLayout #descriptionView_IFRAME,
+.n_board_gallery .seLayout #descriptionView_IFRAME {
+    border: 1px solid #ddd;
+}
+
+
+/*****************************************************************
+글쓰기 : 확인버튼
+*****************************************************************/
+.n_board_txt .bbsnewf5 input[type=image],
+.n_board_gallery .bbsnewf5 input[type=image] {
+    width: auto;
+    vertical-align: top;
+    padding: 0px;
+    border: 0px solid #f00;
+}
+
+
+/*****************************************************************
+글쓰기 : 취소버튼 & 글보기 : 버튼들
+*****************************************************************/
+.n_board_txt .bbsnewf5 > a img,
+.n_board_gallery .bbsnewf5 > a img {
+    border: 0px solid #f00;
+    vertical-align: top;
+    
+}
+
+
+/*****************************************************************
+글목록 : 셀렉트박스
+*****************************************************************/
+.n_board_txt .est_cate_cell select,
+.n_board_gallery .est_cate_cell select {
+    height: 30px;
+    border: 1px solid #bbb;
+    margin: 1px 0;
+}
+
+
+/*****************************************************************
+글쓰기 : 셀렉트박스
+*****************************************************************/
+.n_board_txt .board_desc > select,
+.n_board_gallery .board_desc > select {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #bbb;
+    margin: 1px 0;
+}
+
+
+/*****************************************************************
+글목록 : 검색어입력
+*****************************************************************/
+.n_board_txt .est_keyword_cell input[name=com_board_search_value],
+.n_board_gallery .est_keyword_cell input[name=com_board_search_value] {
+    height: 30px;
+    max-width: 150px;
+    margin: 0 1px;
+    border: 1px solid #bbb;
+    margin: 1px 0;
+}
+
+
+/*****************************************************************
+글목록 : 검색버튼
+*****************************************************************/
+.n_board_txt .est_btn_cell input[title=input],
+.n_board_gallery .est_btn_cell input[title=input] {
+    border: 0px solid #ddd;
+    padding: 0px;
+}
+
+
+/*****************************************************************
+글목록 : 관리자 로그인시 게시물체크박스
+*****************************************************************/
+.n_board_txt .bbschk input[type=checkbox] {
+    width: 17px;
+    height: 17px;
+}
+
+
+/*****************************************************************
+갤러리목록 : 관리자 로그인시 게시물체크박스
+*****************************************************************/
+.n_board_gallery .adminCheck {
+    position: relative;
+    width: 0px;
+}
+.n_board_gallery .adminCheckBox {
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 6px;
+    width: 20px !important;
+}
+
+
+/*****************************************************************
+갤러리목록 : 이미지사이즈
+*****************************************************************/
+.n_board_gallery .nSize img {
+    width: 100%;
+    height: auto;
+    padding: 5px 3px 0;
+}
+
+.n_board_gallery .nSize:hover img {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 0.8;
+}
+
+
+/*****************************************************************
+갤러리형 게시판 : 각각의 칸영역(2단,3단,4단 등..)
+*****************************************************************/
+.n_board_gallery .boxArea {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+/*****************************************************************
+글목록 : 최상단 라인영역
+*****************************************************************/
+.board_top_line {
+    background-color: #555;
+    height: 1px;
+}
+
+
+/*****************************************************************
+글목록 : 최상단 구분영역
+*****************************************************************/
+.n_board_txt .board .boardTitBar {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 0.875em;
+    height: 40px;
+}
+
+.n_board_txt .boardTitBar td:first-child {
+    width: 80px;
+}
+
+
+
+/*****************************************************************
+텍스트형 게시판 : 롤오버 선택컬러
+*****************************************************************/
+.n_board_txt .tr_line,
+.n_board_gallery .tr_line {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.n_board_txt .tr_line:hover {
+    background-color: #eee;
+}
+
+
+/*****************************************************************
+글목록 : 행 높이
+*****************************************************************/
+.n_board_txt .tr_line td {
+    font-size: 1.0em;
+    padding: 8px 5px;
+}
+
+
+/*****************************************************************
+글목록 : 행 : 작성자,작성일자,조회수 등
+*****************************************************************/
+.n_board_txt .tr_line .bbsno,
+.n_board_txt .tr_line .bbscategory,
+.n_board_txt .tr_line .bbswriter,
+.n_board_txt .tr_line .bbsetc_dateof_write,
+.n_board_txt .tr_line .bbsetc_view_count {
+    font-size: 0.875em;
+    color: #888;
+}
+
+
+/*****************************************************************
+글보기,글쓰기 : 항목구분 행
+*****************************************************************/
+.n_board_txt .diviedLine td,
+.n_board_gallery .diviedLine td {
+    border-top: 1px solid #fff;
+}
+
+
+/*****************************************************************
+글보기 : 이미지사이즈 100%
+*****************************************************************/
+.n_board_txt #post_area,
+.n_board_gallery #post_area {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 100px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    text-align: left;
+}
+
+.n_board_txt #post_area > img,
+.n_board_gallery #post_area > img {
+    width: 100% !important;
+    height: 100% !important;
+}
+.n_board_txt #post_area .fsize img,
+.n_board_gallery #post_area .fsize img {
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 425px) {
+    .n_board_txt #post_area img,
+    .n_board_gallery #post_area img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+/* 하단 목록이미지 */
+.n_board_gallery .image_sublist {
+    display: none;
+}
+
+
+
+
+/*****************************************************************
+글보기 : embed : 동영상게시판
+*****************************************************************/
+.n_board_txt #post_area embed,
+.n_board_gallery #post_area embed {
+    width: 100%;
+    border: 0px solid #f00;
+}
+@media screen and (max-width: 768px) {
+    embed {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 425px) {
+    embed {
+        height: 300px;
+    }
+}
+
+
+
+/*****************************************************************
+셀렉트박스 : 공통
+*****************************************************************/
+.n_board_txt select,
+.n_board_gallery select {
+    width: 80px;
+    max-width: 100%;
+    padding: 3px;
+    font-size: 0.875em;
+    color: #555;
+}
+
+
+/*****************************************************************
+글쓰기 : 하단버튼그룹의 상단여백
+*****************************************************************/
+.n_board_txt .nbButton,
+.n_board_gallery .nbButton {
+    margin-top: 30px;
+    border: 0px solid #f00;
+}
+
+
+/*****************************************************************
+글보기 : 하단버튼영역
+*****************************************************************/
+.veiwBottonArea {
+    border: 0px solid #f00;
+}
+
+.veiwBottonArea a {
+    display: inline-block;
+}
+
+
+/*****************************************************************
+카테고리 영역
+*****************************************************************/
+.categoryArea {
+    margin-bottom: 5px;
+    text-align: left;/* left, right, center */
+}
+
+.categoryArea img {
+    display: none;
+}
+
+.categoryArea b {
+    display: none;/* none, inline-block */
+    vertical-align: top;/* top, middle, bottom */
+    font-weight: normal;
+    font-size: 0.875em;
+    color: #555;
+}
+
+.categoryArea select {
+    width: 120px;
+}
+
+
+/*****************************************************************
+게시판 : 페이징
+*****************************************************************/
+.paging {
+    font-size: 0.875em;
+}
+
+.paging b {
+    display: inline-block;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 3px 8px;
+    text-align: center;
+    font-weight: normal;
+    color: #000;
+}
+
+.paging a {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 3px 8px;
+    text-align: center;
+    color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    
+    /*****************************************************************
+    텍스트형 게시판 : 노출항목 & 목록사이즈
+    *****************************************************************/
+    .n_board_txt .board .boardTitBar {
+        display: none;
+    }
+    
+    .n_board_txt .tr_line td {
+        display: none;
+    }
+    
+    
+    /*****************************************************************
+    관리자 로그인시 나타나는 체크박스
+    *****************************************************************/
+    .n_board_txt .tr_line td.bbschk {
+        position: absolute;
+        left: 10px;
+        display: inline-block;
+    }
+    
+    .n_board_txt .tr_line td.bbsno {
+        width: 15%;
+        display: inline-block;
+        float: left;
+    }
+    
+    .n_board_txt .tr_line td.bbsnewf5 {
+        width: 65%;
+        display: inline-block;
+        margin-top: -1px;
+        float: left;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .n_board_txt .tr_line td.bbswriter {
+        width: 20%;
+        display: inline-block;
+        float: right;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    
+    /*****************************************************************
+    갤러리형 게시판 : 목록이미지
+    *****************************************************************/
+    .n_board_gallery .boxArea {
+        display: block;
+        width: 100%;
+    }
+    .n_board_gallery .nSize img {
+        padding: 5px 0px 0;
+    }
+    
+    
+    /*****************************************************************
+    댓글영역 : 이름,내용,시간
+    *****************************************************************/
+    .comment_name {
+        width: 150px;
+        display: block;
+        border: 0px solid #f00;
+    }
+    
+    .comment_view {
+/*        width: 100px;*/
+        display: block;
+        border: 0px solid #f00;
+    }
+    
+    .comment_hour {
+        width: 100px;
+        border: 0px solid #f00;
+    }
+    
+}
+
+
+
+
+/*****************************************************************
+댓글영역 : 이름,내용,시간
+*****************************************************************/
+.commentArea {
+    font-size: 0.875em;
+    color: #888;
+    border: 1px solid #eee !important;
+}
+
+.comment_name {
+    width: 150px;
+}
+
+.comment_view {
+    width: auto;
+}
+
+.comment_hour {
+    width: 100px;
+    padding: 3px 0;
+}
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+폼메일
+*****************************************************************/
+.np_form {
+    width: 100%;
+    margin: 0 auto;
+    border: 0px solid #f00;
+}
+.np_form > table {
+    width: 100%;
+    text-align: left;
+    border: 0px solid #f00;
+}
+
+.np_form input[class=formmail_border] {
+/*    max-width: 500px;*/
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    height: 36px;
+    padding: 3px 5px;
+    margin: 1px 0;
+}
+
+.np_form td.formmail_title_bgcolor {
+    width: 20%;
+    background-color: #f7f7f7;
+    border-top: 1px solid #fff;
+    vertical-align: middle;
+    font-size: 0.875em;
+    color: #555;
+}
+
+.np_form td.formmail_cell_bgcolor {
+    width: 80%;
+    padding: 0px !important;
+}
+
+.np_form select {
+/*    max-width: 500px;*/
+    width: 100%;
+    padding: 3px 5px;
+    height: 36px;
+    margin: 1px 0;
+    border: 1px solid #ccc;
+}
+
+.np_form td.formmail_cell_bgcolor textarea {
+/*    max-width: 500px;*/
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 1px 0;
+    padding: 5px;
+}
+
+.np_form input[type=file] {
+    border: none;
+    display: inline-block;
+    font-family: 'arial';
+    font-size: 12px;
+}
+
+.np_form input[name=phone_no1],
+.np_form input[name=phone_no2],
+.np_form input[name=phone_no3],
+.np_form input[name=mobile_no1],
+.np_form input[name=mobile_no2],
+.np_form input[name=mobile_no3] {
+    max-width: 67px;
+    width: 100%;
+}
+
+
+/*개인정보 동의*/
+.np_form .personalInformation {
+    margin: 30px 0 0 0 !important;
+    font-size: 0.875em;
+    color: #888;
+}
+
+.np_form .personalInformation input[name=com_formmail_check_safe] {
+    width: 20px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+
+
+/*****************************************************************
+스팸등록방지
+*****************************************************************/
+.captcha td {
+    padding: 10px 0;
+    font-size: 0.875em;
+    border: 0px solid #f00;
+}
+
+.captcha td:first-child {
+    background-color: #f7f7f7;
+}
+
+.captcha td img {
+    max-width: 100%;
+}
+
+.captcha input[name=captcha_code] {
+    height: 36px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*****************************************************************
+하단버튼영역
+*****************************************************************/
+.formButton {
+    margin: 20px 0;
+    border: 0px solid #f00;
+}
+
+@media (max-width: 768px) {
+    .np_form input[name=phone_no1],
+    .np_form input[name=phone_no2],
+    .np_form input[name=phone_no3],
+    .np_form input[name=mobile_no1],
+    .np_form input[name=mobile_no2],
+    .np_form input[name=mobile_no3] {
+        width: 67px !important;
+    }
+    .np_form input[name=name],
+    [name=receiver_email],
+    [name=address],
+    [name=title],
+    [type=file] {
+        width: 100%;
+    }
+    .np_form select {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+추출게시물 : 공통
+*****************************************************************/
+.n_output {
+    position: relative;
+    font-size: 1.0em;
+}
+
+.n_output h3 {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 11px 5px 12px;
+    margin: 0 0 10px;
+    font-size: 1.0em;
+}
+
+.n_output span.more {
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    font-size: 0.875em;
+}
+
+.n_output table {
+    width: 100%;
+}
+
+
+/*****************************************************************
+추출게시물 : 텍스트형
+*****************************************************************/
+.n_output_txt .board_output {
+    text-align: left;
+}
+
+
+/*****************************************************************
+추출게시물 : 게시글 상하줄간격
+*****************************************************************/
+.n_output_txt .board_output .board_output tbody > tr > td {
+    padding: 3px 0;
+    height: 36px;
+    font-size: 1.0em;
+    border-bottom: 1px dotted #ccc;
+}
+
+.n_output_txt .board_output tbody > tr > td:nth-child(3) {
+    text-align: right;
+    font-size: 0.875em;
+    color: #888;
+    line-height: normal;
+}
+
+.n_output_txt .board_output img {
+    display: none;
+}
+
+
+
+
+
+
+/*****************************************************************
+갤러리형
+*****************************************************************/
+.n_output_gallery .board_output {
+    text-align: center;
+}
+
+
+/*****************************************************************
+갤러리형 : 게시물 칸칸수 (관리자설정페이지 설정값 적용)
+*****************************************************************/
+.n_output_gallery .board_output > tbody > tr > td {
+    padding: 0 3px 20px;
+}
+
+
+/*****************************************************************
+갤러리형 : 텍스트정보
+*****************************************************************/
+.n_output_gallery .board_output > tbody > tr > td span {
+    font-size: 0.875em;
+    line-height: 120%;
+    color: #888;
+}
+
+
+/*****************************************************************
+갤러리형 : 배경컬러 (마우스오버시 보임)
+*****************************************************************/
+.n_output_gallery .board_output .board_output_gallery_img {
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
+
+/*****************************************************************
+갤러리형 : 이미지사이즈
+*****************************************************************/
+.n_output_gallery .board_output .board_output_gallery_img .board_output_imgs {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    height: auto;
+}
+
+
+/*****************************************************************
+갤러리형 : 마우스오버시 투명도
+*****************************************************************/
+.n_output_gallery .board_output .board_output_gallery_img .board_output_imgs:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+일정관리 : 목록보기
+*****************************************************************/
+/* 목록보기 */
+.np_schedule {
+/*    border: 1px solid #f00;*/
+}
+.np_schedule iframe {
+    display: none;
+}
+
+.np_schedule .schedule_title > a > img {
+    vertical-align: middle;
+    padding: 3px 10px 10px 10px;
+}
+
+.np_schedule img {
+    max-width: 100%;
+}
+
+.np_schedule_tit {
+    height: 40px;
+    font-size: 0.875em;
+    background-color: #eee;
+/*    border-bottom: 1px solid #000;*/
+}
+.np_schedule_tit.sun {
+    background-color: #ddd;
+}
+.np_schedule_tit.sat {
+    background-color: #ddd;
+}
+
+.np_schedule .schedule_write_title {
+    background-color: #eee;
+    width: 20%;
+}
+
+.np_schedule input {
+    width: auto;
+    display: inline-block;
+}
+
+.np_schedule .schedule_write_title {
+    min-width: 20%;
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.np_schedule .schedule_write_cell {
+    font-family: 'Noto Sans KR';
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.np_schedule td#schedule1,
+.np_schedule td#schedule2,
+.np_schedule td#schedule3 {
+    vertical-align: top;
+    padding: 5px;
+}
+
+
+/*****************************************************************
+일정관리 : 내용보기
+*****************************************************************/
+/* 내용보기 */
+.np_schedule .schedule_view {
+    padding: 20px 0;
+    border-bottom: 1px dotted #555;
+}
+.np_schedule input[type=text],
+.np_schedule input[type=password] {
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #bbb;
+}
+.np_schedule textarea {
+    max-width: 100%;
+    margin: 5px 0;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+.np_schedule .veiwBottonArea {
+    margin: 30px 0;
+    border: 0px solid #f00;
+}
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+멀티탭 : 공통
+*****************************************************************/
+.n_tab .nav-tabs {
+    margin: 0 0 8px;
+    border-bottom: 1px solid #ddd;
+}
+.n_tab .nav-tabs li a {
+    font-size: 0.875em;
+    text-align: center;
+}
+.n_tab .tab-content .n_output span.more {
+    position: absolute;
+    top: -40px;
+    right: 0px;
+}
+
+
+/*****************************************************************
+멀티탭 : 탭스타일_01
+*****************************************************************/
+.n_tab .nav-tabs > li {
+    width: 25%
+}
+
+.n_tab .nav-tabs > li > a {
+    margin-right: 1px;
+    background-color: #ddd;
+    border: 0px solid #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.n_tab .nav-tabs > li.active > a,
+.n_tab .nav-tabs > li.active > a:hover,
+.n_tab .nav-tabs > li.active > a:focus {
+    color: #111;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom-color: transparent;
+}
+
+@media screen and (max-width: 425px) {
+    .n_tab .tab-content .n_output span.more {
+        display: none;
+    }
+    .n_tab .nav-tabs > li > a {
+        font-size: 0.875em;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+추가페이지 : 여분페이지
+*****************************************************************/
+.np_add_page {
+    height: 500px;
+    padding-top: 100px;
+    text-align: center;
+    border: 10px solid #ddd;
+    color: #111
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+쇼핑몰 : 주문서작성
+*****************************************************************/
+#content .radio,
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+/*    background-color: #f00;*/
+}
+
+@media (max-width: 768px) {
+    #content input[name=oaddress_01],
+    #content input[name=oaddress_02],
+    #content input[name=omail],
+    #content input[name=address],
+    #content input[name=address_01] {
+        width: 100%;
+    }
+}
+
+#content img {
+/*    display: none;*/
+    max-width: 100%;
+}
+
+
+
+
+/*****************************************************************
+쇼핑몰 : 상품목록이미지
+*****************************************************************/
+#product_list a img {
+    max-width: 250px;
+}
+
+
+
+
+/*****************************************************************
+쇼핑몰 : 서브페이지 > 상단이미지 : 쇼핑몰에서만 적용
+*****************************************************************/
+.nt_imgArea_shop {
+/*    height: 250px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+nFulid : 여백제거
+*****************************************************************/
+.container-fulid.nFulid > .row,
+.container-fulid.nFulid > div > .row {
+    margin: 0;
+}
+.container-fulid.nFulid > .row > div,
+.container-fulid.nFulid > div > .row > div {
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+temp > index_description.html (설명페이지 임시소스)
+*****************************************************************/
+.temp {
+    margin: 0px auto;
+    padding: 150px 0;
+/*    min-width: 1280px;*/
+}
+
+/* 슬라이드1,2,3 */
+.temp > div:nth-child(1),
+.temp > div:nth-child(2),
+.temp > div:nth-child(3) {
+    padding: 200px 100px 100px;
+}
+@media screen and (max-width: 768px) {
+    .temp > div:nth-child(1),
+    .temp > div:nth-child(2),
+    .temp > div:nth-child(3) {
+        padding: 200px 30px 100px;
+    }
+}
+.temp > div {
+    position: relative;
+    margin: 100px auto 400px;
+    padding: 200px 0 100px;
+    border: 20px solid #222;
+    border-radius: 10px;
+}
+
+.temp > div > .nm_tit {
+    margin: 10px auto;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -75px;
+    margin-left: -50%;
+    z-index: 10;
+/*    background-color: #fff;*/
+    font-family: "Noto Sans KR", sans-serif;
+}
+.temp > div > .nm_tit > h3 {
+    background-color: #222;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 50px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #f00;
+}
+.temp > div > .nm_tit > span {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

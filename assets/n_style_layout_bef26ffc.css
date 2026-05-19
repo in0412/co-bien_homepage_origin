@@ -1,0 +1,1434 @@
+@charset 'utf-8';
+
+/*****************************************************************
+   deletion of the current branch prohibited
+   powered by nnin ( http://www.nnin.com )
+*****************************************************************/
+
+
+
+
+#main {
+/*    border: 0px solid #f00;*/
+}
+#sub_wrap {
+/*    border: 0px solid #f00;*/
+}
+
+
+
+/*****************************************************************
+header : 상단전체영역
+*****************************************************************/
+#header {
+    height: 120px;/* 120px, 200px, auto : 높이값을 삭제하고, 메인페이지 상단 겹침 확인 */
+}
+#header .gnb {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    z-index: 16;
+    background-color: #fff;/**/
+    border-bottom: 0px solid #fff;
+}
+#header .gnb.on {
+    background-color: #fff;
+    border-bottom: 0px solid #ddd;
+    margin-top: -40px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+#header .gnb:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 40px;
+/*    border-bottom: 1px dotted rgba(180, 180, 180, 0.2);*/
+/*    background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        height: 100px;
+    }
+    #header .gnb {
+        background-color: #fff;/**/
+    }
+}
+
+
+
+
+
+/*****************************************************************
+상단영역
+*****************************************************************/
+/* 상단영역 */
+.topArea {
+    width: 90%;
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 15px 0;
+    height: 40px;
+    font-size: 0.875em;
+    border: 0px solid #aaa;
+}
+.topArea_inner {
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .topArea {
+        width: 100%;/**/
+        padding: 5px 0px 0;
+    }
+}
+
+
+
+
+
+/*****************************************************************
+상단영역 : 디자인샘플, 퀵메뉴, sns, 로그인, 기타
+*****************************************************************/
+/* 디자인샘플선택 */
+.dropdown {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.dropdown button {
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(100,100,100,0.2);
+    border-radius: 2px;
+    height: 30px;
+    font-size: 1.0em;
+}
+.dropdown button:hover {
+    border: 1px solid rgba(100,100,100,0.2);
+}
+.dropdown ul li a {
+    font-size: 0.875em;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+
+
+/* nt_quick : 퀵메뉴 */
+.topArea .nt_quick {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+.topArea .nt_quick p {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.topArea .nt_quick:hover p {
+    color: #666;
+}
+.topArea .nt_quick ul {
+    z-index: 100;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 130px;
+    display: none;
+}
+.topArea .nt_quick ul li {
+    
+}
+.topArea .nt_quick ul li a {
+    display: block;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.0em;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.topArea .nt_quick ul li:hover a {
+    position: relative;
+    padding-left: 10px;
+    color: #666;
+}
+.topArea .nt_quick ul li:hover a:before {
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    content: '';
+    background-color: #333;
+    width: 5rpx;
+    height: 1px;
+}
+.topArea .nt_quick ul li:last-child a {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nt_quick {
+        display: none;
+    }
+}
+
+
+
+/* language : 언어 */
+.topArea .language {
+    float: left;
+    margin-right: 10px;
+}
+.topArea .language ul {
+    overflow: hidden;
+    float: right;
+}
+.topArea .language li {
+    float: left;
+    margin-left: 1px;
+    margin-top: 4px;
+    opacity: 0.6;
+}
+.topArea .language li:hover,
+.topArea .language li.on {
+    opacity: 1.0;
+}
+
+@media screen and (max-width: 768px) {
+    .language {
+        display: block;
+    }
+}
+
+
+
+/* sns :소셜아이콘 */
+.topArea .nt_sns {
+    float: left;
+    margin-right: 10px;
+}
+.topArea .nt_sns ul {
+    overflow: hidden;
+    float: right;
+}
+.topArea .nt_sns li {
+    float: left;
+    margin-left: -3px;
+    margin-top: 4px;
+    font-size: 0;
+}
+
+.topArea .nt_sns li img {
+    border: 0px;
+    width: 80%;
+    opacity: 0.8;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.topArea .nt_sns li img.on {
+    opacity: 1.0;
+    transform: rotate(30deg);
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+    .nt_sns {
+        display: none;
+    }
+}
+
+
+
+/* nt_login : 로그인 */
+.topArea .nt_login {
+    float: left;
+}
+.topArea .nt_login ul {
+    overflow: hidden;
+}
+.topArea .nt_login li {
+    float: left;
+    margin-left: 1px;
+}
+.topArea .nt_login li a {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    display: block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(100,100,100,0.2);
+    border-radius: 2px;
+    color: #555;
+}
+.topArea .nt_login li a:hover {
+    background-color: rgba(255,255,255,0.8);
+    color: #111;
+}
+
+@media screen and (max-width: 768px) {
+    .topArea .nt_login {
+        margin-right: 5px;
+    }
+}
+
+
+
+/* 쇼핑몰 : online shopping */
+.topArea .nt_shop {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+/*    display: block;*/
+}
+.topArea .nt_shop p a {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(155,155,155,0.6);
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.topArea .nt_shop:hover p a {
+    background-color: rgba(55,55,55,0.6);
+}
+.topArea .nt_shop ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 110;
+    width: 120px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: none;
+}
+.topArea .nt_shop ul li a {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    display: block;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.topArea .nt_shop ul li:hover a {
+    padding-left: 10px;
+    color: #000;
+    font-weight: 400;
+    position: relative;
+}
+.topArea .nt_shop ul li:hover a:before {
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    content: '';
+    background-color: #333;
+    width: 5px;
+    height: 1px;
+}
+.topArea .nt_shop ul li:last-child a {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nt_shop {
+        display: none;
+        margin: 0 5px 0 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+상단영역 > 사이트맵 : sitemap
+*****************************************************************/
+/* 상단 분류메뉴 영역 : ICON (스크롤시 나타남) */
+.nt_sitemap {
+    display: block;/* none, block */
+    position: absolute;
+    top: 10px;
+    right: 0;
+    float: left;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    transform: translate(-40px, 10px);
+}
+.nt_sitemap.on {
+    opacity: 1;
+    transition: all 0.4s ease-out;
+    transform: translate(-1px, 10px);
+}
+.nt_sitemap a {
+    width: 40px;
+    height: 40px;
+    padding: 4px 0 0 2px;
+    overflow: hidden;
+    background-color: #111;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    color: #aaa;
+    font-size: 1.250em;
+/*    text-shadow: 0px 0px 10px rgba(255,255,255,1.0);*/
+}
+.nt_sitemap a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .nt_sitemap {
+        display: none;
+    }
+}
+
+
+
+
+/*****************************************************************
+영역나누기 : 로고영역 & 메뉴영역
+*****************************************************************/
+#header .gnb .nav {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+#header .gnb .nav .logoArea {
+    width: 25.6%;/* 25.6%, 100% */
+    height: 80px;
+    float: left;
+    margin: 0px 0;
+    overflow: hidden;
+    display: table;
+    background-color: transparent;/**/
+    position: relative;
+}
+#header .gnb .nav .menuArea {
+    width: 65%;/* 65%, 74.4%, 100% */
+    float: right;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    #header .gnb .nav {
+        width: 100%;
+        background-color: transparent;/**/
+        padding: 0px 0px;
+    }
+    #header .gnb .nav .logoArea {
+        width: 100%;
+        height: 60px;
+    }
+    #header .gnb .nav .menuArea {
+        width: 100%;
+    }
+}
+
+
+
+
+/*****************************************************************
+상단영역 : 로고, 카테고리메뉴 : (모바일공통)
+*****************************************************************/
+/* 로고 */
+.logoArea .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;/**/
+}
+
+.logoArea .logo a {
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    background-color: transparent;/**/
+}
+
+.logoArea .logo .logo_off {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    opacity: 1;
+}
+.logoArea .logo a:hover .logo_off {
+    transform: translate(20px, 0px);
+    opacity: 0;
+}
+
+.logoArea .logo .logo_on {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    transform: translate(20px, 0px);
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.logoArea .logo a:hover .logo_on {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.logoArea .logo img {
+    max-width: 325px;/**/
+    width: 100%;
+/*    background-color: #ddd;*/
+}
+
+@media screen and (max-width: 768px) {
+    .logoArea .logo {
+        text-align: left;/**/
+        padding-left: 5px;
+    }
+    
+    .logoArea .logo img {
+        width: auto;
+        height: 60px;
+    }
+}
+
+
+
+
+/* 햄버거메뉴 버튼 */
+.logoArea .button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    padding-top: 7px;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+.logoArea .button.on {
+    background-color: #d00000;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #header .gnb .nav .logoArea .button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        border-radius: 2px;
+    }
+}
+
+
+
+
+/*****************************************************************
+상단영역 > 1차메뉴 > 배경색상,갯수
+*****************************************************************/
+/* 1차메뉴 영역 */
+.mainmenu {
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin: 0 auto;
+    border: 0px solid #f00;
+}
+.mainmenu.on {
+    padding-right: 50px;/* 0px, 50px, 60px */
+}
+
+.mainmenu > ul {
+    float: right;
+    width: 100%;
+}
+
+
+/* grid : 메뉴갯수 */
+.mainmenu > ul.grid3 > li {
+    width: 33.33%;
+}
+.mainmenu > ul.grid4 > li {
+    width: 25%;
+}
+.mainmenu > ul.grid5 > li {
+    width: 20%;
+}
+.mainmenu > ul.grid6 > li {
+    width: 16.66%;
+}
+.mainmenu > ul.grid7 > li {
+    width: 14.28%;
+}
+.mainmenu > ul.grid8 > li {
+    width: 12.50%;
+}
+
+
+
+
+/* 1차메뉴 배경색상 */
+.mainmenu > ul > li {
+    position: relative;
+    float: left;
+    border-left: 0px solid #fff;/**/
+    background-color: transparent;/**/
+}
+.mainmenu > ul > li:first-child {
+    border: none;/**/
+}
+
+/* 1차메뉴 배경색상 : 마우스오버시 */
+.mainmenu > ul > li:hover {
+/*    border-radius: 10px 10px 0 0;*/
+    background-color: transparent;/**/
+}
+
+/* 1차메뉴 색상 */
+.mainmenu > ul > li > a {
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    display: block;
+    height: 80px;/**/
+    line-height: 80px;/**/
+    text-align: center;
+    margin: 0px 0 0;/**/
+    background-color: transparent;/**/
+    border-right: 0px solid #444;
+    font-size: 1.0em;
+    font-weight: 700;
+    color: #333;
+}
+.mainmenu > ul > li:hover > a {
+    background-color: transparent;/**/
+    font-weight: 700;
+    color: #97ad1b;/*폰트색상*/
+}
+.mainmenu > ul > li:last-child > a {
+    border-right: none;
+}
+
+
+
+/* 2차메뉴 > 배경색상,갯수 */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    border-bottom: 0px solid #ddd;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    padding-top: 0px;/**/
+    background-color: transparent;/**/
+}
+.submenu a {
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    border: 0px solid #eee;
+    border-width: 0 0px 0px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #555;
+    position: relative;
+}
+.submenu a:hover {
+    background-color: #97ad1b;
+    font-weight: 500;
+    color: #fff;/*폰트색상*/
+}
+.submenu a:first-child {
+    border-top: 0px solid #fff;
+}
+
+/**/
+/*
+.submenu a:before {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    content: '';
+    width: 1px;
+    height: 1px;
+}
+.submenu a:hover:before {
+    width: 10px;
+    background-color: #000;
+}
+*/
+
+
+
+/*****************************************************************
+모바일 : 768px이하 > 카테고리메뉴
+*****************************************************************/
+@media screen and (max-width: 768px) {
+    
+    /* 1차메뉴 */
+    #header .gnb .nav .mainmenu {
+        display: none;
+        position: absolute;
+        width: 100%;/* 70%, 100% */
+        padding-top: 0px;
+        opacity: 0.95;/**/
+        right: 0px;
+    }
+    #header .gnb .nav .mainmenu > ul {
+        max-height: 500px;
+        overflow: auto;
+        margin-top: 0px;
+    }
+    #header .gnb .nav .mainmenu > ul > li {
+        width: 100%;
+        border-top: 1px solid #444;
+    }
+    #header .gnb .nav .mainmenu > ul > li:last-child {
+        border-bottom: 1px solid #444;
+    }
+    #header .gnb .nav .mainmenu > ul > li > a {
+        display: block;
+        background-color: #333;/**/
+        height: 50px;
+        line-height: 50px;
+        margin: 0px 0 0;/**/
+        color: #fff;
+    }
+    #header .gnb .nav .mainmenu > ul > li.s_on > a {
+        background-color: #111;/**/
+    }
+    
+    #header .gnb .nav .mainmenu > ul > li > .submenu {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        padding: 0;
+    }
+    
+    /* 2차메뉴 */
+    #header .gnb .nav .mainmenu > ul > li.s_on .submenu {
+        border: none;
+    }
+    #header .gnb .nav .mainmenu > ul > li.s_on .submenu a {
+/*        font-weight: 700;*/
+/*        color: #333;*/
+    }
+    
+    #header .gnb .mainmenu {
+        -webkit-transition: none;
+        transition: none;
+    }
+    #header .gnb .mainmenu.on {
+        padding-right: 0px;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #header .gnb .nav .mainmenu {
+        display: block !important;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+서브페이지 > 레이아웃
+*****************************************************************/
+/* 서브페이지 상단여백 */
+#sub_wrap {
+    margin-top: 0px;
+}
+
+#contentsArea {
+    max-width: 100%;
+    text-align: left;
+    background-color: #fff;
+    margin-top: 0px;
+}
+#contentsArea img {
+    max-width: 100%;
+}
+
+
+/*****************************************************************
+서브페이지 > 상단이미지 : 공통
+*****************************************************************/
+/* 상단배경이미지 */
+.nt_imgArea {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+}
+.nt_imgArea .con {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;/* 사용값 : cover, auto */
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    display: table-cell;
+    vertical-align: middle;
+    transform: scale(1.1, 1.1);
+}
+.nt_imgArea .con:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);/* overlay */
+    width: 100%;
+    height: 200px;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1.0, 1.0);
+    }
+}
+
+/* 설명텍스트 */
+.nt_imgArea .con p {
+    display: block;/* 사용값 : none, block */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px 0;/* 여백조절 */
+    text-align: right;/* 위치조절 : left, center, right */
+    font-size: 0.750em;
+	font-weight: 100;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .nt_imgArea {
+        height: 150px;
+    }
+}
+
+
+
+
+
+/*****************************************************************
+서브페이지 > 현재위치
+*****************************************************************/
+.n_position {
+    max-width: 1300px;
+    padding-right: 15px;
+    margin: 10px auto 0;
+    text-align: right;
+    font-size: 0.875em;
+    font-weight: 300;
+    color: #333;
+    display: block;/* none, block */
+}
+.n_position img {
+    padding-right: 5px;
+}
+
+/* 본문내용 */
+.n_contents {
+    margin: 0px 0 50px;
+}
+
+/**/
+.n_position.on {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .n_position {
+        padding-right: 15px;
+    }
+}
+
+
+
+
+
+
+/*****************************************************************
+서브페이지 > 페이지메뉴 공통
+*****************************************************************/
+.pageMenu {
+    max-width: 230px;
+    margin: 0px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pageMenu h2 {
+    background: #8fa222;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 1px;
+    font-size: 1.125em;
+    font-weight: 700;
+    color: #fff;
+}
+.pageMenu ul {
+    overflow: hidden;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+.pageMenu ul li,
+.pageMenu #leftoff,
+.pageMenu #lefton {
+/*    float: left;*/
+    width: 100%;/* 12.5%, 100% */
+    padding: 0px !important;
+}
+.pageMenu ul li a,
+.pageMenu #leftoff a,
+.pageMenu #lefton a {
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-width: 0px 1px 1px 1px;
+    box-sizing: border-box;
+    font-size: 0.875em;
+    color: #333;
+}
+.pageMenu ul li:hover a,
+.pageMenu #leftoff:hover a {
+    background-color: #eee;
+    color: #000;
+}
+.pageMenu ul li.on a,
+.pageMenu #lefton a {
+    background-color: #ddd;
+    box-sizing: border-box;
+    color: #111;
+    font-weight: 700;
+    position: relative;
+}
+
+/* 내용영역 */
+@media screen and (max-width: 768px) {
+    .n_contents > .container > .row > div {
+        width: 100%;
+    }
+    /* 페이지메뉴 슘김 */
+    .n_contents > .container > .row > div.col-sm-3 {
+        display: none;
+    }
+    .n_contents > .container > .row > div.col-sm-3 > .pageMenu {
+        max-width: 100%;
+    }
+}
+
+
+
+
+/*****************************************************************
+서브페이지 > 배너
+*****************************************************************/
+.left_banner {
+    max-width: 230px;
+    margin-top: 10px;
+    text-align: left;
+    display: block;/* none, block */
+}
+.left_banner a {
+    display: inline-block;
+    margin-top: 5px;
+}
+.left_banner img {
+    width: 100%;
+}
+
+.left_banner.on {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .left_banner {
+        display: none;
+    }
+}
+
+
+
+/*****************************************************************
+서브페이지 > 셀렉트
+*****************************************************************/
+.left_select {
+    max-width: 230px;
+    display: block;/* none, block */
+}
+.left_select select {
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: 0.875em;
+}
+
+.left_select.on {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .left_select select {
+        display: none;
+    }
+}
+
+
+
+/*****************************************************************
+서브페이지 > 페이지 타이틀
+*****************************************************************/
+.n_tit_page {
+    padding: 30px 0;
+    text-align: left;
+    position: relative;
+    color: #111;
+    border: 0px solid #f00;
+}
+.n_tit_page:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+}
+
+.n_tit_page h2 {
+    font-weight: 100;
+    font-size: 2.0em;
+    color: #111;
+}
+.n_tit_page p {
+    padding: 10px 0;
+    line-height: 110%;
+    font-size: 0.875em;
+    font-weight: 100;
+    color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+    .n_tit_page {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+공통하단 : 공통영역
+*****************************************************************/
+#n_footer {
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    background-color: #555555;/**/
+    text-align: left;
+}
+
+#n_footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*****************************************************************
+공통하단 : sec01 : 영역
+*****************************************************************/
+#n_footer .sec01 {
+    margin: 0px auto 30px;
+    padding: 15px 0;
+    background-color: #ddd;/**/
+}
+
+
+/*****************************************************************
+공통하단 : sec01 > sec01_01 : HOME,GUIDE,AGREEMENT...
+*****************************************************************/
+#n_footer .sec01 .sec01_01 ul {
+    overflow: hidden;
+}
+#n_footer .sec01 .sec01_01 ul li {
+    float: left;
+    padding-right: 20px;
+}
+#n_footer .sec01 .sec01_01 ul li a {
+    position: relative;
+    display: block;
+    font-size: 0.875em;
+    font-weight: 400;
+    color: #666;
+    padding: 5px 0;
+}
+#n_footer .sec01 .sec01_01 ul li a:hover {
+    color: #111;
+}
+#n_footer .sec01 .sec01_01 ul li a:after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: -11px;
+    width: 1px;
+    height: 6px;
+    background-color: #666;
+}
+#n_footer .sec01 .sec01_01 ul li:last-child a:after {
+    display: none;
+}
+
+
+/*****************************************************************
+공통하단 : sec01 > sec01_02 : admin, shoppingmall
+*****************************************************************/
+#n_footer .sec01 .sec01_02 {
+    overflow: hidden;
+    border: 0px solid #f00;
+}
+#n_footer .sec01 .sec01_02 ul {
+    overflow: hidden;
+    float: right;
+}
+#n_footer .sec01 .sec01_02 ul li {
+    float: left;
+    margin: 0 0 0 5px;
+}
+#n_footer .sec01 .sec01_02 ul li a {
+    display: block;
+    background-color: #888;
+    border-radius: 2px;
+    padding: 5px 12px;
+    font-size: 0.875em;
+    color: #eee;
+}
+#n_footer .sec01 .sec01_02 ul li:hover a {
+    background-color: #333;
+    color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+    #n_footer .sec01 .sec01_02 ul {
+        float: left;
+    }
+    #n_footer .sec01 .sec01_02 ul li {
+        margin: 5px 5px 5px 0;
+    }
+}
+
+
+
+
+/*****************************************************************
+공통하단 : sec02 : 영역
+*****************************************************************/
+/* sec02 */
+#n_footer .sec02 {
+    
+}
+
+
+/*****************************************************************
+공통하단 : sec02 > sec02_01 : 로고, 주소 등...
+*****************************************************************/
+#n_footer .sec02 .sec02_01 .ns_address h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ff0000;
+    padding-bottom: 10px;
+}
+#n_footer .sec02 .sec02_01 .ns_address ul li {
+    font-size: 1em;
+    line-height: 22px;
+    color: #ffffff;
+}
+#n_footer .sec02 .sec02_01 .ns_address .des {
+    font-size: 0.750em;
+    font-weight: 100;
+    margin-top: 40px;
+    line-height: 120%;
+    color: #bbb;
+    padding-bottom: 30px;
+}
+#n_footer .sec02 .sec02_01 .ns_address ul li span {
+    font-size: 0.875em;
+    color: #555
+}
+#n_footer .sec02 .sec02_01 .ns_address a:hover,
+#n_footer .sec02 .sec02_01 .ns_address a:visited {
+    color: #555;
+}
+#n_footer .sec02 .sec02_01 .ns_address .use {
+    display: inline-block;
+    background-color: #666;
+    border-radius: 2px;
+    padding: 5px 10px;
+    line-height: 120%;
+    font-size: 0.875em;
+    color: #eee;
+}
+
+
+
+
+/*****************************************************************
+공통하단 : sec02 > sec02_02 : QUICK LINK
+*****************************************************************/
+#n_footer .sec02 .sec02_02 .ns_link {
+    margin-bottom: 20px;
+}
+#n_footer .sec02 .sec02_02 .ns_link h3 {
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #222;
+    padding: 5px 0;
+}
+#n_footer .sec02 .sec02_02 .ns_link .form-group {
+    margin: 5px 0 10px;
+    display: block;
+}
+#n_footer .sec02 .sec02_02 .ns_link .form-group select {
+    font-size: 0.850em;
+    border-radius: 2px;
+}
+#n_footer .sec02 .sec02_02 .ns_link ul li {
+    padding-bottom: 5px
+}
+#n_footer .sec02 .sec02_02 .ns_link ul li a {
+    display: block;
+    font-size: 0.875em;
+    color: #666;
+}
+#n_footer .sec02 .sec02_02 .ns_link ul li a:hover {
+    color: #111;
+}
+#n_footer .sec02 .sec02_02 .ns_link .glyphicon {
+    font-size: 1.0em;
+    color: #444;
+    padding-right: 10px;
+}
+
+
+
+
+/*****************************************************************
+공통하단 : sec02 > sec02_02 : familySite
+*****************************************************************/
+#n_footer .sec02 .sec02_02 .ns_familySite {
+    margin-bottom: 30px;
+}
+#n_footer .sec02 .sec02_02 .ns_familySite h3 {
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #222;
+    padding: 5px 0;
+}
+#n_footer .sec02 .sec02_02 .ns_familySite ul {
+    overflow: hidden;
+}
+#n_footer .sec02 .sec02_02 .ns_familySite ul li {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    border-radius: 2px;
+    overflow: hidden;
+    float: left;
+    width: 55px;
+    max-height: 55px;
+    margin: 0px 3px 3px 0px;
+    border: 1px solid #ccc;
+    opacity: 0.6;
+}
+#n_footer .sec02 .sec02_02 .ns_familySite ul li:hover {
+    opacity: 1.0;
+}
+#n_footer .sec02 .sec02_02 .ns_familySite ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/************************************************************
+    쇼핑몰(shopping mall) : 하단영역
+************************************************************/
+/* 계좌번호 : sec02 > sec02_03 : BANK INFO */
+#n_footer .sec02 .sec02_03 .ns_bank {
+    margin-bottom: 25px;
+}
+#n_footer .sec02 .sec02_03 .ns_bank h3 {
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #222;
+    padding: 5px 0;
+}
+#n_footer .sec02 .sec02_03 .ns_bank ul li {
+    font-size: 0.875em;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #555;
+}
+#n_footer .sec02 .sec02_03 .ns_bank ul li span {
+    letter-spacing: 0px;
+    padding-right: 1px;
+    vertical-align: top;
+    color: #888;
+}
+
+
+/* 에스크로 : sec02 > sec02_03 : ESCROW SERVICE */
+#n_footer .sec02 .sec02_03 .ns_escrow {
+    margin-bottom: 10px;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow h3 {
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #222;
+    padding: 5px 0;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow p {
+    font-size: 0.875em;
+    color: #888;
+    line-height: 120%;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow ul {
+    overflow: hidden;
+    margin-top: 5px;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow ul li {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    border-radius: 2px;
+    overflow: hidden;
+    float: left;
+    width: 43px;
+    height: 43px;
+    margin: 0px 3px 3px 0px;
+    border: 1px solid #ccc;
+    opacity: 0.6;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow ul li:hover {
+    opacity: 1.0;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/*****************************************************************
+기타 > 스크롤탑
+*****************************************************************/
+.scrollToTop {
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #111;
+    border-radius: 2px;
+}
+.scrollToTop:hover {
+    bottom: 25px;
+}
+
+.scrollToTop a {
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.0em;
+    padding-top: 7px;
+    color: #aaa;
+}
+.scrollToTop a:hover {
+    color: #fff;
+}
+
+
+
+
+

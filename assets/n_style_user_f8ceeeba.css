@@ -1,0 +1,225 @@
+@charset 'utf-8';
+
+/*****************************************************************
+   deletion of the current branch prohibited
+   powered by nnin ( http://www.nnin.com )
+*****************************************************************/
+
+
+/*****************************************************************
+폰트리셋 & 폰트크기조절 : 16px기본크기
+*****************************************************************/
+.ft_reset {
+    font-size: 14px;/* 14px, 15px, 16px ... */
+}
+
+@media all and (max-width: 768px) {
+    .ft_reset {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+/*****************************************************************
+상단 버튼들 : 사용시에는 아래 소스 삭제 또는 비활성화
+*****************************************************************/
+/* 쇼핑몰 버튼(상단) */
+.nt_shop {
+/*    display: none;*/
+}
+
+/* 다른 디자인 살펴보기 버튼 */
+.dropdown {
+/*    display: none;*/
+}
+
+/* 퀵메뉴 버튼 */
+.nt_quick {
+    display: none;
+}
+
+/* 언어 */
+.language {
+    display: none;
+}
+
+/* sns 버튼 */
+.nt_sns {
+/*    display: none;*/
+}
+/* 로그인 버튼 */
+.nt_login {
+/*    display: none;*/
+}
+
+
+
+
+
+
+
+/*****************************************************************
+하단 버튼들 : 사용시에는 아래 소스 삭제 또는 비활성화
+*****************************************************************/
+/* 어드민 버튼(하단) */
+.adminbtn {
+/*    display: none;*/
+}
+
+/* 쇼핑몰 버튼(하단) */
+.shoppingmall {
+/*    display: none;*/
+}
+
+
+
+
+
+
+
+/*****************************************************************
+하단 정보 : 3단 중에서 1번째, 2번재, 3번째를 선택하여 삭제 / 이동
+*****************************************************************/
+#n_footer > .sec02 > .container > .row > div:nth-child(3) {
+    display: none;
+}
+#n_footer > .sec02 > .container > .row > div:nth-child(2) {
+    float: right;
+}
+@media all and (max-width: 991px) {
+    #n_footer > .sec02 > .container > .row > div:nth-child(2) {
+        float: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*****************************************************************
+******************************************************************
+                    skin : 하단전체 : 다크그레이 스킨
+******************************************************************
+*****************************************************************/
+
+/* 공통하단 배경 */
+#n_footer {
+    background-color: #777;/**/
+    margin-top: 0px;
+}
+
+/* 공통하단 배경 */
+#n_footer .sec01 {
+    background-color: #333;/**/
+    margin-top: 0px;
+}
+
+
+
+/* 공통하단 : HOME,GUIDE,AGREEMENT... */
+#n_footer .sec01 .sec01_01 ul li a {
+    color: #888;
+}
+#n_footer .sec01 .sec01_01 ul li a:hover {
+    color: #aaa;
+}
+
+/* 공통하단 : admin, shoppingmall */
+#n_footer .sec01 .sec01_02 ul li a {
+    display: block;
+    background-color: #666;
+    border-radius: 2px;
+    padding: 5px 12px;
+    font-size: 0.875em;
+    color: #000;
+}
+#n_footer .sec01 .sec01_02 ul li:hover a {
+    background-color: #aaa;
+    color: #000;
+}
+
+
+
+/* 공통하단 : 로고, 주소 등... */
+#n_footer .sec02 .sec02_01 .ns_address h2 {
+    color: #ccc;
+}
+#n_footer .sec02 .sec02_01 .ns_address ul li {
+    color: #888;
+}
+#n_footer .sec02 .sec02_01 .ns_address .des {
+    color: #444;
+}
+#n_footer .sec02 .sec02_01 .ns_address .use {
+    background-color: #666;
+    color: #111;
+}
+
+
+
+/* 공통하단 : QUICK LINK */
+#n_footer .sec02 .sec02_02 .ns_link h3 {
+    color: #bbb;
+}
+#n_footer .sec02 .sec02_02 .ns_link ul li a {
+    color: #666;
+}
+#n_footer .sec02 .sec02_02 .ns_link ul li a:hover {
+    color: #888;
+}
+#n_footer .sec02 .sec02_02 .ns_link .glyphicon {
+    color: #999;
+}
+
+/* 공통하단 : familySite */
+#n_footer .sec02 .sec02_02 .ns_familySite h3 {
+    color: #bbb;
+}
+#n_footer .sec02 .sec02_02 .ns_familySite ul li {
+    opacity: 0.4;
+}
+
+
+
+/* shop : BANK INFO */
+#n_footer .sec02 .sec02_03 .ns_bank h3 {
+    color: #bbb;
+}
+#n_footer .sec02 .sec02_03 .ns_bank ul li {
+    color: #888;
+}
+#n_footer .sec02 .sec02_03 .ns_bank ul li span {
+    color: #666;
+}
+
+/* shop : ESCROW SERVICE */
+#n_footer .sec02 .sec02_03 .ns_escrow h3 {
+    color: #bbb;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow p {
+    color: #555;
+}
+#n_footer .sec02 .sec02_03 .ns_escrow ul li {
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
